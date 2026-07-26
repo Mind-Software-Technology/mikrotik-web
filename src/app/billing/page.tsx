@@ -83,7 +83,7 @@ function SideNavItem({ icon, label, active, badge, onClick }: {
       <span style={{ flexShrink: 0 }}>{icon}</span>
       <span style={{ flex: 1 }}>{label}</span>
       {badge !== undefined && (
-        <span style={{ background: '#ef4444', color: '#fff', borderRadius: 99, fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', boxShadow: '0 2px 4px rgba(239,68,68,0.2)' }}>
+        <span style={{ background: '#ef4444', color: '#fff', borderRadius: 99, fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
           {badge}
         </span>
       )}
@@ -370,7 +370,7 @@ function TransaksiTab() {
               <Copy size={18} /> Salin ID
             </button>
             {selectedTx.status === 'pending' && (
-              <button className="btn btn-primary" style={{ flex: 1, borderRadius: 14, padding: '12px', background: '#16a34a', color: '#fff', boxShadow: '0 4px 10px rgba(22,163,74,0.3)', fontWeight: 900 }}>
+              <button className="btn btn-primary" style={{ flex: 1, borderRadius: 14, padding: '12px', background: '#16a34a', color: '#fff', boxShadow: '0 4px 10px rgba(0,0,0,0.1)', fontWeight: 900 }}>
                 <CheckCircle2 size={18} /> Verif
               </button>
             )}
@@ -550,7 +550,7 @@ export default function BillingPage() {
             width: 42, height: 42, borderRadius: 14, flexShrink: 0,
             background: '#2563eb',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 4px 10px rgba(37,99,235,0.2)',
+            boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
           }}>
             <Network size={22} color="#fff" />
           </div>
@@ -628,7 +628,7 @@ export default function BillingPage() {
               background: '#dcfce7', border: '1px solid #bbf7d0',
               borderRadius: 99, padding: '8px 16px',
             }}>
-              <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#16a34a', boxShadow: '0 0 6px rgba(22,163,74,0.4)', animation: 'pulse-dot 2s infinite' }} />
+              <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#16a34a', boxShadow: '0 0 6px rgba(0,0,0,0.1)', animation: 'pulse-dot 2s infinite' }} />
               <span style={{ fontSize: '0.8rem', fontWeight: 900, color: '#16a34a', letterSpacing: '0.05em' }}>API Connected</span>
             </div>
             <button style={{ 
@@ -679,8 +679,8 @@ export default function BillingPage() {
 
       <style>{`
         @keyframes pulse-dot {
-          0%, 100% { box-shadow: 0 0 6px rgba(22,163,74,0.4); opacity: 1; }
-          50% { box-shadow: 0 0 12px rgba(22,163,74,0.6); opacity: 0.5; }
+          0%, 100% { box-shadow: 0 0 6px rgba(0,0,0,0.1); opacity: 1; }
+          50% { box-shadow: 0 0 12px rgba(0,0,0,0.1); opacity: 0.5; }
         }
         @media (max-width: 1024px) {
           .billing-stats { grid-template-columns: repeat(2, 1fr) !important; }

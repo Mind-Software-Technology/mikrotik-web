@@ -51,7 +51,7 @@ export default function Hero({ onOpenRegisterModal, onOpenDemo }: HeroProps) {
               background: '#ffffff', 
               border: '1px solid #e2e8f0', 
               color: '#3b82f6',
-              boxShadow: '0 4px 20px rgba(59,130,246,0.15)',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
               padding: '8px 16px'
             }}>
               <Zap size={14} style={{ marginRight: 8, color: '#f59e0b' }} /> Sistem Terpadu Global 2.0
@@ -86,7 +86,7 @@ export default function Hero({ onOpenRegisterModal, onOpenDemo }: HeroProps) {
                   transition={{ delay: 0.6 + (i * 0.1), duration: 0.6, ease: "easeOut" }}
                   style={{ display: 'flex', alignItems: 'center', gap: 14 }}
                 >
-                  <div style={{ background: '#eff6ff', padding: 6, borderRadius: '50%', boxShadow: '0 2px 10px rgba(59,130,246,0.1)' }}>
+                  <div style={{ background: '#eff6ff', padding: 6, borderRadius: '50%', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
                     <CheckCircle size={16} color="#3b82f6" strokeWidth={2.5} />
                   </div>
                   <span style={{ fontSize: '1.05rem', color: '#334155', fontWeight: 600 }}>{f}</span>
@@ -103,11 +103,11 @@ export default function Hero({ onOpenRegisterModal, onOpenDemo }: HeroProps) {
                   background: 'linear-gradient(135deg, #3b82f6, #2563eb)',
                   color: '#ffffff', padding: '16px 32px', borderRadius: 99,
                   fontWeight: 700, fontSize: '1.05rem', border: 'none', cursor: 'pointer',
-                  boxShadow: '0 10px 25px -5px rgba(37,99,235,0.4)',
+                  boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)',
                   transition: 'transform 0.2s, box-shadow 0.2s'
                 }}
-                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 15px 30px -5px rgba(37,99,235,0.5)'; }}
-                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(37,99,235,0.4)'; }}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 15px 30px -5px rgba(0,0,0,0.1)'; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(0,0,0,0.1)'; }}
               >
                 Registrasi Sekarang <ArrowRight size={18} />
               </button>
@@ -145,7 +145,7 @@ export default function Hero({ onOpenRegisterModal, onOpenDemo }: HeroProps) {
                 border: '1px solid #ffffff',
                 borderRadius: 40,
                 padding: '60px 40px',
-                boxShadow: '0 30px 60px -15px rgba(0,0,0,0.1), 0 0 40px rgba(59,130,246,0.1)',
+                boxShadow: '0 30px 60px -15px rgba(0,0,0,0.1), 0 0 40px rgba(0,0,0,0.1)',
                 display: 'flex', flexDirection: 'column', alignItems: 'center',
                 maxWidth: 480, width: '100%',
                 position: 'relative'

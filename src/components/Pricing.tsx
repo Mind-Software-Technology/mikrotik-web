@@ -138,7 +138,7 @@ export default function Pricing({ onSelectPlan }: PricingProps) {
                   display: 'flex', flexDirection: 'column',
                   ...(plan.popular ? {
                     borderColor: plan.color,
-                    boxShadow: `0 20px 50px -15px rgba(139,61,255,0.2), 0 0 0 1px ${plan.color}`,
+                    boxShadow: `0 20px 50px -15px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.1)`,
                     transform: 'scale(1.03)',
                     zIndex: 10
                   } : {})
@@ -151,7 +151,7 @@ export default function Pricing({ onSelectPlan }: PricingProps) {
                     color: '#fff', padding: '6px 20px',
                     borderRadius: 99, fontSize: '0.75rem', fontWeight: 900,
                     display: 'flex', alignItems: 'center', gap: 6, whiteSpace: 'nowrap',
-                    boxShadow: `0 4px 15px rgba(139,61,255,0.3)`,
+                    boxShadow: `0 4px 15px rgba(0,0,0,0.1)`,
                     letterSpacing: '0.05em'
                   }}>
                     <Star size={14} fill="currentColor" /> PALING POPULER

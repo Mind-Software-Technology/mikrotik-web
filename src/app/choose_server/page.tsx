@@ -168,7 +168,7 @@ export default function ChooseServerPage() {
                 width: 28, height: 28, borderRadius: '50%',
                 background: '#2563eb',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 4px 10px rgba(37,99,235,0.3)',
+                boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
               }}>
                 <Zap size={14} color="#fff" />
               </div>
@@ -319,7 +319,7 @@ export default function ChooseServerPage() {
                         <div style={{
                           width: 8, height: 8, borderRadius: '50%',
                           background: '#16a34a',
-                          boxShadow: '0 0 10px rgba(22,163,74,0.4)',
+                          boxShadow: '0 0 10px rgba(0,0,0,0.1)',
                           animation: 'pulse-dot 2s ease-in-out infinite',
                         }} />
                         <span style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: 700 }}>
@@ -369,8 +369,8 @@ export default function ChooseServerPage() {
 
       <style>{`
         @keyframes pulse-dot {
-          0%, 100% { opacity: 1; box-shadow: 0 0 6px rgba(22,163,74,0.4); }
-          50% { opacity: 0.5; box-shadow: 0 0 12px rgba(22,163,74,0.6); }
+          0%, 100% { opacity: 1; box-shadow: 0 0 6px rgba(0,0,0,0.1); }
+          50% { opacity: 0.5; box-shadow: 0 0 12px rgba(0,0,0,0.1); }
         }
         @keyframes spin {
           to { transform: rotate(360deg); }

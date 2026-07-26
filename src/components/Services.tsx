@@ -48,7 +48,7 @@ export default function Services({ onOpenDemo }: ServicesProps) {
             display: 'inline-flex',
             background: '#eff6ff', color: '#2563eb',
             border: '1px solid #bfdbfe',
-            boxShadow: '0 4px 10px rgba(37,99,235,0.1)',
+            boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
             padding: '6px 14px', borderRadius: 99,
             fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em',
             marginBottom: 20
@@ -91,7 +91,7 @@ export default function Services({ onOpenDemo }: ServicesProps) {
                   marginBottom: 24,
                   color: svc.color, 
                   background: `color-mix(in srgb, ${svc.color} 10%, transparent)`,
-                  boxShadow: `0 4px 15px color-mix(in srgb, ${svc.color} 20%, transparent)`
+                  boxShadow: `0 4px 15px rgba(0,0,0,0.1)`
                 }}
               >
                 {svc.icon}

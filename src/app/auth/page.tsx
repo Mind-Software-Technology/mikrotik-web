@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 // ─── Premium Light Theme Illustrations (SVG animations) ───────────────────
 function IllustrationWelcome() {
   return (
-    <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: 280, filter: 'drop-shadow(0 20px 40px rgba(139,61,255,0.15))' }}>
+    <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: 280, filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.08))' }}>
       <rect x="50" y="30" width="180" height="120" rx="12" fill="#ffffff" stroke="rgba(139,61,255,0.3)" strokeWidth="1" />
       <rect x="60" y="40" width="160" height="100" rx="6" fill="#f8fafc"/>
       {/* Glow */}
@@ -45,7 +45,7 @@ function IllustrationWelcome() {
 
 function IllustrationNetwork() {
   return (
-    <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: 280, filter: 'drop-shadow(0 20px 40px rgba(59,130,246,0.15))' }}>
+    <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: 280, filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.08))' }}>
       <circle cx="140" cy="100" r="28" fill="#ffffff" stroke="#3b82f6" strokeWidth="2"/>
       <circle cx="140" cy="100" r="14" fill="#3b82f6" />
       {/* Pulses */}
@@ -65,7 +65,7 @@ function IllustrationNetwork() {
 
 function IllustrationSecurity() {
   return (
-    <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: 280, filter: 'drop-shadow(0 20px 40px rgba(45,212,191,0.15))' }}>
+    <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: 280, filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.08))' }}>
       <path d="M140 25 L210 55 L210 115 Q210 165 140 185 Q70 165 70 115 L70 55 Z"
         fill="#ffffff" stroke="#2dd4bf" strokeWidth="2"/>
       <path d="M140 40 L195 65 L195 115 Q195 152 140 170 Q85 152 85 115 L85 65 Z"
@@ -203,7 +203,7 @@ function AuthForm() {
                   width: i === slide ? 32 : 8, height: 8, borderRadius: 99,
                   background: i === slide ? accentColor : '#cbd5e1',
                   border: 'none', cursor: 'pointer', padding: 0, transition: 'all 0.3s ease',
-                  boxShadow: i === slide ? `0 0 10px rgba(139,61,255,0.3)` : 'none'
+                  boxShadow: i === slide ? `0 0 10px rgba(0,0,0,0.1)` : 'none'
                 }} />
               ))}
             </div>
@@ -218,7 +218,7 @@ function AuthForm() {
           }}>
             <Server size={14} color={accentColor} />
             <span style={{ fontSize: '0.8rem', fontWeight: 900, color: accentColor, letterSpacing: '0.05em' }}>{serverLabel}</span>
-            <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#2dd4bf', boxShadow: '0 0 10px #2dd4bf', animation: 'pulse-glow 2s infinite' }} />
+            <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#2dd4bf', boxShadow: '0 0 10px rgba(0,0,0,0.1)', animation: 'pulse-glow 2s infinite' }} />
           </div>
         </div>
 

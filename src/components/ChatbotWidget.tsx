@@ -72,7 +72,7 @@ export default function ChatbotWidget() {
           background: 'linear-gradient(135deg, #1e90ff, #0055c8)',
           border: 'none', cursor: 'pointer',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          boxShadow: '0 4px 20px rgba(30,144,255,0.45)',
+          boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
           animation: 'pulse-chat 2s ease-in-out infinite',
         }}>
           <Headphones size={22} color="#fff" />

@@ -198,7 +198,7 @@ export default function RegistrationPage() {
                       position: 'absolute', top: 16, right: 16, 
                       background: plan.color, color: '#fff', 
                       borderRadius: '50%', padding: 4, display: 'flex',
-                      boxShadow: `0 4px 10px ${plan.color}`
+                      boxShadow: `0 4px 10px rgba(0,0,0,0.1)`
                     }}>
                       <Check size={14} strokeWidth={3} />
                     </div>
